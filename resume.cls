@@ -125,7 +125,7 @@
   \itemsep -0.5em \vspace{-0.5em}
 }{
   \end{list}
-  \vspace{0.5em}
+  \vspace{1.5em}
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
