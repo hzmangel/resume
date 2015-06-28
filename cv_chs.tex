@@ -95,10 +95,10 @@
 
 \begin{rSubsectionList}
 \item \textbf{Tornado} API服务的主要开发人员，在开发任务之外协助PM处理沟通事宜。
-\item 为移动App，传感器数据设计DB以及Big Query架构。
-\item 组织并维护用于提供服务的 \textbf{docker} 容器。
-\item 架设 \textbf{Jenkins} 服务器帮助持续集成。
-\item 使用 \textbf{Gatling} 进行压力测试。
+\item 组织并维护提供服务的 \textbf{docker} 容器，极大方便了服务的部署和迁移。
+\item 为移动App，传感器数据设计DB以及Big Query架构。完成客户的查询及数据统计需求。
+\item 架设 \textbf{Jenkins} 服务器帮助持续集成，方便Docker容器的更新。
+\item 使用 \textbf{Gatling} 进行压力测试，并根据测试结果调整代码以提高性能。
 \end{rSubsectionList}
 \end{rSubsection}
 
@@ -107,12 +107,12 @@
 Starcount (\href{http://www.starcount.com/}{\tt \http{}www.starcount.com/}) 是一个专注于计算公众人物流行度，并以此为公众人物打分，排序，预测的网站。它通过抓取公众人物在多个社交网站上的信息作为原始计算数据，通过MapReduce计算用户的评分。此项目包括主站，移动应用，后台CMS和数据爬虫。
 
 \begin{rSubsectionList}
-\item 设计并开发了后台系统，包括CMS和数据爬虫，数据后期处理。
-\item 设计CMS架构，并使用 \textbf{Ruby On Rails} 实现。
-\item 将之前使用的第三方数据计算平台替换为自建的 \textbf{Python} 脚本，并使用 \textbf{ElasticSearch} 提供搜索服务。
-\item 设计 \textbf{MongoDB} 数据存储结构，并使用Index加速数据查询。
-\item 重构爬虫程序。使用 \textbf{Golang} 重构之前基于 \textbf{Ruby} 的爬虫，使用非阻塞并发代替了简单循环，在资源占用和效率上有很大改进。
-\item 引入 \textbf{Redis} 处理长耗时任务，如数据统计等。
+\item 设计并开发了后台系统，包括CMS，数据爬虫以及数据后期处理。
+\item 设计CMS架构，并使用 \textbf{Ruby On Rails} 实现，帮助完成客户日常数据的处理，验证等操作。
+\item 将之前使用的第三方数据计算平台替换为自建的 \textbf{ElasticSearch} + \textbf{Python} 结构，并更新相应的CMS和爬虫，为客户节省了开销。
+\item 设计 \textbf{MongoDB} 数据存储结构，并使用Index加速数据查询。提高查询速度 \textbf{50\%} 以上。
+\item 重构爬虫程序。使用 \textbf{Golang} 重构之前基于 \textbf{Ruby} 的爬虫，使用非阻塞并发代替了循环，在抓取效率不变的情况下，将数据抓取节点数量从\textbf{30}台降低为\textbf{6}台。
+\item 引入 \textbf{Redis} 处理数据统计等长耗时任务，提升CMS端用户体验。
 \end{rSubsectionList}
 \end{rSubsection}
 
@@ -132,7 +132,7 @@ Starcount (\href{http://www.starcount.com/}{\tt \http{}www.starcount.com/}) 是�
 \begin{rSubsectionList}
 \item 设计并实现了 \textbf{MongoDB} 数据库的表结构和查询。
 \item 设计并实现了基于 \textbf{Ruby On Rails} 的分销平台前端及后端管理界面。
-\item 在系统中集成支付宝的借记卡，信用卡及大额支付接口
+\item 在系统中集成支付宝的借记卡，信用卡及大额支付接口。
 \end{rSubsectionList}
 \end{rSubsection}
 
@@ -159,6 +159,12 @@ Starcount (\href{http://www.starcount.com/}{\tt \http{}www.starcount.com/}) 是�
 \end{rSubsection}
 
 \begin{rSubsection}{北京邮电大学}{2001年9月 - 2005年6月}{信息工程，学士学位}{}
+\end{rSubsection}
+
+\begin{rSubsection}{在线课程}{}{}{}
+  \begin{itemize}
+    \item 海量数据挖掘(Cousera)，\textbf{优秀}。
+  \end{itemize}
 \end{rSubsection}
 
 \end{rSection}
