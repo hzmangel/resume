@@ -52,7 +52,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{rSection}{\kaiti 个人简介}
 
-高级软件工程师，供职于FavoriteMedium。主要专注于高性能Web服务的设计和开发，有前端经验，可以使用jQuery和AngularJS等技术完成简单的前端页面，有完整的设计和开发电子商务平台的经验。
+高级软件工程师，供职于FavoriteMedium。主要专注于Web后端服务的设计和开发，有前端经验，可以使用jQuery和AngularJS等技术完成简单的前端页面，有完整的设计和开发电子商务平台的经验。
 
 此前就职于IBM，负责开发高性能计算调度软件LoadLeveler，主要负责任务调度和Linux网络编程相关领域。
 
@@ -119,15 +119,37 @@ Starcount (\href{http://www.starcount.com/}{\tt \http{}www.starcount.com/}) 是�
 
 \begin{rSubsection}{LoadLeveler}{2008年4月 - 2012年4月}{高级软件工程师 (\textit{从2011年6月起})}{}
 
-参与设计和开发高性能计算调度系统LoadLeveler。曾参与配置文件增强，IPv6支持，任务迁移和动态资源使用调整等多个子项目中，为系统在蓝色基因集群中运行提供技术支持。此外还负责开发小组小规模集群环境的搭建和维护。
+参与设计和开发高性能计算调度系统LoadLeveler。LoadLeveler是使用C++编写的，运行于Linux/AIX上的调度软件，它可以在大规模的集群，如蓝色基因（Blue Gene）中，有效的调度计算任务，最大化系统资源的利用。我主要负责了以下几方面的开发：
 
+\begin{rSubsectionList}
+\item 增强配置文件：改进配置文件系统，将配置从文件中迁移到数据库中，以提高在大型集群中的系统效率。
+\item IPv6支持：使用新的系统调用并更新系统内部数据结构，使得系统可以运行于纯IPv6，纯IPv4以及IPv6/v4混合环境中。
+\item 任务迁移：使用cgroup的相关系统调用，实现任务在Linux平台上的动态迁移。
+\item 动态改变任务占用资源：支持在任务运行中更改所占用资源，增加系统资源使用率。
+\end{rSubsectionList}\vspace{-1.5em}
+
+此外，我还负责开发组内测试集群的部署和维护。
+\end{rSubsection}
+\vspace{1.8em}
+
+
+\begin{rSubsection}{3D打印的切片系统}{2015年3月 - 2015年5月}{开发及运维}{兼职项目}
+
+此系统用于3D打印中切片任务的管理。用户调用接口后，系统启动docker容器进行切片，并实时更新状态信息到数据库中。此外还提供了查询接口用以查询任务运行状态。
+
+\begin{rSubsectionList}
+\item 使用 \textbf{Golang} 设计并实现API服务器。
+\item 设计多个容器间消息传递的格式。
+\item 使用 \textbf{Docker} 构建系统，并使用Golang API管理容器。
+\item 使用 \textbf{Redis PUB/SUB} 模型在容器间异步传递消息。
+\end{rSubsectionList}
 \end{rSubsection}
 
 
 
 \begin{rSubsection}{稳拍分销平台}{2014年8月 - 2014年9月}{全栈开发工程师}{兼职项目}
 
-稳拍分销平台 (\href{http://shop.wenpod.com/stores/855435/}{\http{}shop.wenpod.com/stores/855435/}) 是一个全功能的电子商务分销平台，支持多用户，多级分销，提供分销商管理，库存隔离，分销货品数量管理，分成计算等功能。
+稳拍分销平台是一个全功能的电子商务分销平台，支持多用户，多级分销，提供分销商管理，库存隔离，分销货品数量管理，分成计算等功能。
 
 \begin{rSubsectionList}
 \item 设计并实现了 \textbf{MongoDB} 数据库的表结构和查询。
